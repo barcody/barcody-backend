@@ -7,4 +7,7 @@ assignees: ''
 
 ---
 
+As a ..., I want ... so that ...
 
+Example:
+As a developer, I want dummy data so that I can implement the integration layer for the project.
