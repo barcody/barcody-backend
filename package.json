@@ -5,6 +5,7 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ./",
     "start": "node server.js"
   },
   "repository": {
@@ -19,5 +20,8 @@
   "homepage": "https://github.com/barcody/barcody-backend#readme",
   "dependencies": {
     "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0"
   }
 }
