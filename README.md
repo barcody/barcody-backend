@@ -103,3 +103,27 @@ echo 'export PATH="/usr/local/opt/mongodb-community@4.4/bin:$PATH"' >> ~/.zshrc
 > restart your terminal to reflect the changes
 
 Then simply just type `mongo` and you will be connected to your local mongodb.
+
+---
+
+if mongodb in your machine is setup, one of the below commands should be enough to run the server on background job.
+
+```bash
+brew services start mongodb
+brew services start mongodb/brew/mongodb-community
+brew services start mongodb/brew/mongodb-community@4.4
+```
+
+then you can access the database locally using mongosh or mongo:
+
+````bash
+mongosh monogdb://localhost:27017
+mongo mongodb://localhost:27017
+
+### logs
+
+you can check mongodb logs using the below command:
+
+```bash
+tail -f /usr/local/var/log/mongodb/mongo.log
+````
