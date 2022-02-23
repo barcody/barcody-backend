@@ -17,12 +17,12 @@ const mongo_conn_native = require("../../mongo_conn_native").Connection;
 
 // eslint-disable-next-line
 exports.dbAPI = async (req, res, next) => {
-    // const dbInstance = mongo_conn_native.connectToMongo();
-    const client = mongo_conn_native.client;
-    console.log("-------------",client);
-    await client.db("test").collection("test").insertOne({
-        "test": "test"
-    })
+	// const dbInstance = mongo_conn_native.connectToMongo();
+	const client = mongo_conn_native.client;
+	console.log("-------------",client);
+	await client.db("test").collection("test").insertOne({
+		"test": "test"
+	});
 	res.send({
 		error: false,
 		data: "DB API Works",

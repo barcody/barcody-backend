@@ -11,6 +11,6 @@ router.post(
 
 router.post(
 	"/database", controller_db.dbAPI
-)
+);
 
 module.exports = router;

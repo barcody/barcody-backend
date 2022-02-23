@@ -58,7 +58,6 @@ npm run lint
 ## Install mongodb on mac
 
 install brew package manager
-
 check brew
 
 ```bash
@@ -116,9 +115,10 @@ brew services start mongodb/brew/mongodb-community@4.4
 
 then you can access the database locally using mongosh or mongo:
 
-````bash
+```bash
 mongosh monogdb://localhost:27017
 mongo mongodb://localhost:27017
+```
 
 ### logs
 
@@ -126,4 +126,4 @@ you can check mongodb logs using the below command:
 
 ```bash
 tail -f /usr/local/var/log/mongodb/mongo.log
-````
+```
