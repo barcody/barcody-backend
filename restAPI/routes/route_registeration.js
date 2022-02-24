@@ -8,4 +8,4 @@ router.post(
 	"/registeration",  controller_registeration.registerAPI
 );
 
-module.exports = router
+module.exports = router;
