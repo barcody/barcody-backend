@@ -38,12 +38,12 @@ exports.testDB = async (req, res, next) => {
 	// const dbInstance = mongo_conn_native.connectToMongo();
 	const client = mongo_conn_native.client;
 	try {
-	await client.db("test").collection("test").insertOne({
-		"test": "test"
-	});
+		await client.db("test").collection("test").insertOne({
+			"test": "test"
+		});
 
 	} catch (e) {
-		return res.send(e)
+		return res.send(e);
 	}
 	res.send({
 		error: false,
