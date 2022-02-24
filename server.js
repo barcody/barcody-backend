@@ -41,6 +41,8 @@ mongo_conn_native.connectToMongo().then(
 	async (res) => {
 		console.log(res);
 		// Routes
+
+		// testing APIs
 		app.use("/api/testAPI", routeTestAPI);
 		let port = process.env.PORT || 3016;
 		app.listen(port, async () => {
