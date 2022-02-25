@@ -8,6 +8,7 @@ const mongo_conn_native = require("./mongo_conn_native").Connection;
 
 // Routes
 const routeTestAPI = require("./restAPI/routes/route_test");
+const routeUser = require("./restAPI/routes/route_user");
 
 // Initialzie Express
 const app = express();
@@ -41,7 +42,11 @@ mongo_conn_native.connectToMongo().then(
 	async (res) => {
 		console.log(res);
 		// Routes
+
+		// testing APIs
 		app.use("/api/testAPI", routeTestAPI);
+		app.use("/api/user", routeUser);
+
 		let port = process.env.PORT || 3016;
 		app.listen(port, async () => {
 			logger.info(`Test Node is listening on port ${port}`);

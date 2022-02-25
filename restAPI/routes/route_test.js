@@ -8,4 +8,8 @@ router.post(
 	"/testing",  controller_appraisal_modules.testAPI
 );
 
+router.post(
+	"/database", controller_appraisal_modules.testDB
+);
+
 module.exports = router;
